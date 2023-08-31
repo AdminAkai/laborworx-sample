@@ -38,6 +38,7 @@
     "file-saver": "^2.0.5",
     "file-system": "^1.2.2",
     "formik": "^2.2.9",
+    "gh-pages": "^6.0.0",
     "graphql": "^16.6.0",
     "libphonenumber-js": "^1.10.36",
     "moment": "^2.29.4",
@@ -59,6 +60,7 @@
     "uuid": "^9.0.0",
     "yup": "^0.32.11"
   },
+  "homepage": "https://AdminAkai.github.io/laborworx-sample"
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -69,7 +71,8 @@
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
     "format": "prettier --check .",
-    "prettier:fix": "prettier --write ."
+    "prettier:fix": "prettier --write .",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
