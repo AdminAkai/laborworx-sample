@@ -1,0 +1,9 @@
+schema:
+  - "schema.graphql"
+generates:
+  ./src/API.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers
+      - typescript-operations
+    overwrite: true

@@ -1,0 +1,12 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.laborworx.android",
+      "sha256_cert_fingerprints":
+      [
+        "2F:80:64:07:12:34:16:74:BA:18:CD:BE:8A:A2:FF:66:68:E3:31:11:3A:C4:4A:B5:83:16:54:A0:03:01:5C:8C",
+        "A2:73:2D:48:6E:76:28:CB:4E:50:BD:A9:A4:2E:4F:68:48:56:D5:31:CF:52:C2:64:37:13:76:6B:EE:43:0D:ED"
+      ]
+    }
+}]

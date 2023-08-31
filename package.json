@@ -1,0 +1,182 @@
+{
+  "name": "laborworx.web",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "@apollo/client": "3.7.3",
+    "@aws-sdk/client-cognito-identity-provider": "^3.266.1",
+    "@date-io/date-fns": "^2.16.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@hookform/resolvers": "^2.9.10",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/lab": "^5.0.0-alpha.110",
+    "@mui/material": "^5.10.16",
+    "@mui/styles": "^5.10.16",
+    "@mui/x-data-grid": "^5.17.14",
+    "@mui/x-data-grid-pro": "^5.17.14",
+    "@mui/x-date-pickers": "^5.0.9",
+    "@react-google-maps/api": "^2.18.1",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/node": "^18.11.11",
+    "@types/react": "^18.0.26",
+    "@types/react-html-parser": "^2.0.2",
+    "@types/react-redux": "^7.1.24",
+    "@types/redux-saga": "^0.10.5",
+    "amazon-cognito-identity-js": "^6.1.2",
+    "aws-appsync": "^4.1.9",
+    "aws-appsync-auth-link": "^3.0.7",
+    "aws-appsync-subscription-link": "^3.1.2",
+    "date-fns": "^2.29.3",
+    "docx": "^7.7.0",
+    "file-saver": "^2.0.5",
+    "file-system": "^1.2.2",
+    "formik": "^2.2.9",
+    "graphql": "^16.6.0",
+    "libphonenumber-js": "^1.10.36",
+    "moment": "^2.29.4",
+    "notistack": "^2.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.40.0",
+    "react-icons": "^4.7.1",
+    "react-papaparse": "^4.1.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.4",
+    "react-scripts": "^5.0.1",
+    "react-tabs": "^6.0.1",
+    "react-toastify": "^9.1.3",
+    "recharts": "^2.4.3",
+    "redux-persist": "^6.0.0",
+    "styled-components": "^5.3.6",
+    "ts-node": "^10.9.1",
+    "uuid": "^9.0.0",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest --coverage --maxConcurrency=4",
+    "test:coverage": "jest --coverage",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/ --ignore-path .gitignore",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install",
+    "format": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "typegen": "graphql-codegen --config graphqlrc.yml",
+    "fetch-schema": "dotenv -- cross-var aws appsync get-introspection-schema --api-id %REACT_APP_API_ID% --format SDL schema.graphql --region %REACT_APP_REGION%",
+    "add-types-schema": "node ./utils/enforceSchema.ts",
+    "local-maps-key": "node ./utils/localMapsKey.ts",
+    "update-schema": "npm run fetch-schema && npm run add-types-schema && npm run typegen",
+    "initialize-project": "npm run checkout-uat && npm run update-schema && npm run local-maps-key",
+    "checkout-uat": "aws s3 cp s3://lw-env-uat/.env .env",
+    "checkout-staging": "aws s3 cp s3://lw-env-staging/.env .env",
+    "checkout-prod": "aws s3 cp s3://lw-env-prod/.env .env",
+    "checkout-uat:local": "aws s3 cp s3://lw-env-uat/.env .env && npm run local-maps-key",
+    "checkout-staging:local": "aws s3 cp s3://lw-env-staging/.env .env && npm run local-maps-key",
+    "checkout-prod:local": "aws s3 cp s3://lw-env-prod/.env .env && npm run local-maps-key"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest": {
+    "verbose": true,
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleNameMapper": {
+      ".+\\.(css|less|sass|scss|png|jpg|svg)$": "jest-transform-stub"
+    },
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/build"
+    ],
+    "testEnvironment": "jsdom"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.18.6",
+    "@graphql-codegen/cli": "^2.16.5",
+    "@graphql-codegen/client-preset": "^1.3.0",
+    "@graphql-codegen/introspection": "^2.2.3",
+    "@graphql-codegen/typescript-resolvers": "^2.7.13",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/jest": "^29.2.4",
+    "@types/lodash": "^4.14.191",
+    "@types/react-dom": "^18.0.9",
+    "@types/react-tabs": "^5.0.5",
+    "@types/styled-components": "^5.1.26",
+    "@types/uuid": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "cross-var": "^1.1.0",
+    "dotenv-cli": "^7.0.0",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.11",
+    "html-react-parser": "^3.0.4",
+    "husky": "^8.0.2",
+    "jest": "^29.3.1",
+    "jest-dom": "^4.0.0",
+    "jest-environment-jsdom": "^29.3.1",
+    "jest-transform-stub": "^2.0.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.0",
+    "react-test-render": "^1.1.2",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.3",
+    "web-vitals": "^3.1.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --check",
+      "eslint"
+    ],
+    "*.js{,x,on}": [
+      "prettier --check"
+    ],
+    "*.md{,x}": [
+      "prettier --check"
+    ],
+    "*.css": [
+      "prettier --check"
+    ]
+  }
+}

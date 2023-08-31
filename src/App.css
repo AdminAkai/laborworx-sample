@@ -1,0 +1,74 @@
+/* Fonts */
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("./fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  src: local("Poppins"), url("./fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+/*reset styles*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", "Roboto", "Helvetica", "Arial", sans-serif !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #808080 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 10px;
+  border: 4px solid #ffffff;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  text-decoration: none solid rgb(218, 218, 218);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+#root {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

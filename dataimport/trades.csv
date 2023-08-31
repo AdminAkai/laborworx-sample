@@ -1,0 +1,51 @@
+name,industry
+Electrician,Construction
+Carpenter,Construction
+Painter,Construction
+Concrete Finisher,Construction
+Rob Buster,Construction
+Plumber,Construction
+HVAC,Construction
+Forklift Operator,Construction
+Forklift Operator,Manufacturing
+Maintenance,Manufacturing
+Packaging,Manufacturing
+Line Operations,Manufacturing
+Sanitation,Manufacturing
+Quality Control,Manufacturing
+Supervisor,Manufacturing
+Electrician,Heavy Industrial
+Carpenter,Heavy Industrial
+Painter,Heavy Industrial
+Concrete Finisher,Heavy Industrial
+Rob Buster,Heavy Industrial
+Plumber,Heavy Industrial
+HVAC,Heavy Industrial
+Forklift Operator,Heavy Industrial
+Millwright,Heavy Industrial
+Welder,Heavy Industrial
+Iron Worker,Heavy Industrial
+Pipefitter,Heavy Industrial
+Heavy Equipment Operator,Heavy Industrial
+Safety Coordinator,Heavy Industrial
+Electrician,Skilled Trades
+Carpenter,Skilled Trades
+Painter,Skilled Trades
+Concrete Finisher,Skilled Trades
+Rob Buster,Skilled Trades
+Plumber,Skilled Trades
+HVAC,Skilled Trades
+Forklift Operator,Skilled Trades
+Millwright,Skilled Trades
+Welder,Skilled Trades
+Iron Worker,Skilled Trades
+Pipefitter,Skilled Trades
+Heavy Equipment Operator,Skilled Trades
+Safety Coordinator,Skilled Trades
+Project Manager,Professional
+Construction Manager,Professional
+Site Manager,Professional
+Safety Manager,Professional
+General Foreman,Professional
+Foreman,Professional
+Supervisor,Professional

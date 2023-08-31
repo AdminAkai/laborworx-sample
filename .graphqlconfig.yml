@@ -1,0 +1,5 @@
+projects:
+  laborworxweb:
+    schemaPath: ./schema.graphql
+    includes:
+      - src/graphql/**/*.ts
