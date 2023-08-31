@@ -60,7 +60,7 @@
     "uuid": "^9.0.0",
     "yup": "^0.32.11"
   },
-  "homepage": "https://AdminAkai.github.io/laborworx-sample"
+  "homepage": "https://adminakai.github.io/laborworx-sample/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
