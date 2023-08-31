@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "C:/Program Files/Git/laborworx-sample/static/css/main.ed66ce3e.css",
-    "main.js": "C:/Program Files/Git/laborworx-sample/static/js/main.7d432d57.js",
-    "static/js/297.7d657473.chunk.js": "C:/Program Files/Git/laborworx-sample/static/js/297.7d657473.chunk.js",
-    "static/js/94.4c0d30f5.chunk.js": "C:/Program Files/Git/laborworx-sample/static/js/94.4c0d30f5.chunk.js",
-    "static/media/Poppins-Regular.ttf": "C:/Program Files/Git/laborworx-sample/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/Poppins-Medium.ttf": "C:/Program Files/Git/laborworx-sample/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
-    "index.html": "C:/Program Files/Git/laborworx-sample/index.html",
-    "main.ed66ce3e.css.map": "C:/Program Files/Git/laborworx-sample/static/css/main.ed66ce3e.css.map",
-    "main.7d432d57.js.map": "C:/Program Files/Git/laborworx-sample/static/js/main.7d432d57.js.map",
-    "297.7d657473.chunk.js.map": "C:/Program Files/Git/laborworx-sample/static/js/297.7d657473.chunk.js.map",
-    "94.4c0d30f5.chunk.js.map": "C:/Program Files/Git/laborworx-sample/static/js/94.4c0d30f5.chunk.js.map"
+    "main.css": "https://adminakai.github.io/laborworx-sample/static/css/main.913506e6.css",
+    "main.js": "https://adminakai.github.io/laborworx-sample/static/js/main.4f15cc8a.js",
+    "static/js/297.085fa7fe.chunk.js": "https://adminakai.github.io/laborworx-sample/static/js/297.085fa7fe.chunk.js",
+    "static/js/94.4c0d30f5.chunk.js": "https://adminakai.github.io/laborworx-sample/static/js/94.4c0d30f5.chunk.js",
+    "static/media/Poppins-Regular.ttf": "https://adminakai.github.io/laborworx-sample/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "https://adminakai.github.io/laborworx-sample/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "index.html": "https://adminakai.github.io/laborworx-sample/index.html",
+    "main.913506e6.css.map": "https://adminakai.github.io/laborworx-sample/static/css/main.913506e6.css.map",
+    "main.4f15cc8a.js.map": "https://adminakai.github.io/laborworx-sample/static/js/main.4f15cc8a.js.map",
+    "297.085fa7fe.chunk.js.map": "https://adminakai.github.io/laborworx-sample/static/js/297.085fa7fe.chunk.js.map",
+    "94.4c0d30f5.chunk.js.map": "https://adminakai.github.io/laborworx-sample/static/js/94.4c0d30f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed66ce3e.css",
-    "static/js/main.7d432d57.js"
+    "static/css/main.913506e6.css",
+    "static/js/main.4f15cc8a.js"
   ]
 }
