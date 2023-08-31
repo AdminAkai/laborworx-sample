@@ -11,7 +11,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/laborworx-sample">
       <AppNavbar />
       <Routes>
         <Route path="/*" element={<WorkerProfile />} />

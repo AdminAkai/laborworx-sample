@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.95d7017f.css",
-    "main.js": "/static/js/main.1159ffc5.js",
-    "static/js/297.7d657473.chunk.js": "/static/js/297.7d657473.chunk.js",
-    "static/js/94.4c0d30f5.chunk.js": "/static/js/94.4c0d30f5.chunk.js",
-    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/Poppins-Medium.ttf": "/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
-    "index.html": "/index.html",
-    "main.95d7017f.css.map": "/static/css/main.95d7017f.css.map",
-    "main.1159ffc5.js.map": "/static/js/main.1159ffc5.js.map",
-    "297.7d657473.chunk.js.map": "/static/js/297.7d657473.chunk.js.map",
-    "94.4c0d30f5.chunk.js.map": "/static/js/94.4c0d30f5.chunk.js.map"
+    "main.css": "/laborworx-sample/static/css/main.5926dab5.css",
+    "main.js": "/laborworx-sample/static/js/main.fed04293.js",
+    "static/js/297.7d657473.chunk.js": "/laborworx-sample/static/js/297.7d657473.chunk.js",
+    "static/js/94.4c0d30f5.chunk.js": "/laborworx-sample/static/js/94.4c0d30f5.chunk.js",
+    "static/media/Poppins-Regular.ttf": "/laborworx-sample/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/laborworx-sample/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "index.html": "/laborworx-sample/index.html",
+    "main.5926dab5.css.map": "/laborworx-sample/static/css/main.5926dab5.css.map",
+    "main.fed04293.js.map": "/laborworx-sample/static/js/main.fed04293.js.map",
+    "297.7d657473.chunk.js.map": "/laborworx-sample/static/js/297.7d657473.chunk.js.map",
+    "94.4c0d30f5.chunk.js.map": "/laborworx-sample/static/js/94.4c0d30f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95d7017f.css",
-    "static/js/main.1159ffc5.js"
+    "static/css/main.5926dab5.css",
+    "static/js/main.fed04293.js"
   ]
 }
