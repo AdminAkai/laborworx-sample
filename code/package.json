@@ -69,19 +69,7 @@
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
     "format": "prettier --check .",
-    "prettier:fix": "prettier --write .",
-    "typegen": "graphql-codegen --config graphqlrc.yml",
-    "fetch-schema": "dotenv -- cross-var aws appsync get-introspection-schema --api-id %REACT_APP_API_ID% --format SDL schema.graphql --region %REACT_APP_REGION%",
-    "add-types-schema": "node ./utils/enforceSchema.ts",
-    "local-maps-key": "node ./utils/localMapsKey.ts",
-    "update-schema": "npm run fetch-schema && npm run add-types-schema && npm run typegen",
-    "initialize-project": "npm run checkout-uat && npm run update-schema && npm run local-maps-key",
-    "checkout-uat": "aws s3 cp s3://lw-env-uat/.env .env",
-    "checkout-staging": "aws s3 cp s3://lw-env-staging/.env .env",
-    "checkout-prod": "aws s3 cp s3://lw-env-prod/.env .env",
-    "checkout-uat:local": "aws s3 cp s3://lw-env-uat/.env .env && npm run local-maps-key",
-    "checkout-staging:local": "aws s3 cp s3://lw-env-staging/.env .env && npm run local-maps-key",
-    "checkout-prod:local": "aws s3 cp s3://lw-env-prod/.env .env && npm run local-maps-key"
+    "prettier:fix": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
